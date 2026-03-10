@@ -1,3 +1,231 @@
+# #-UI (hash-ui)
+
+**hash-ui** is a lightweight collection of reusable **React UI primitives built with Tailwind CSS**.
+
+It provides composable components such as layouts, forms, overlays, and navigation elements that help you build modern interfaces quickly while still allowing full Tailwind customization.
+
+The goal of `hash-ui` is to give developers a clean set of building blocks without locking them into a rigid design system.
+
+---
+
+# Features
+
+- React component primitives
+- Tailwind CSS powered styling
+- Fully composable components
+- Works with **Next.js**, **Vite**, and other React frameworks
+- Tree-shakable package build
+- TypeScript support
+
+---
+
+# Installation
+
+Install the package using your preferred package manager.
+
+## pnpm
+
+```bash
+pnpm add @thetinycode/hash-ui
+npm
+npm install @thetinycode/hash-ui
+yarn
+yarn add @thetinycode/hash-ui
+Tailwind Setup
+
+hash-ui uses Tailwind CSS utilities internally, so your project must use Tailwind CSS v4.
+
+Add this to your global CSS file (for example globals.css in Next.js):
+
+@import "tailwindcss";
+@source "../node_modules/@thetinycode/hash-ui";
+
+This allows Tailwind to detect the utility classes used inside the library.
+
+Import Styles
+
+Import the library stylesheet in your root layout or application entry.
+
+Example for Next.js App Router:
+
+import "@thetinycode/hash-ui/styles.css"
+import "./globals.css"
+Basic Usage
+
+Import the components you want from the package.
+
+import {
+  Section,
+  Container,
+  Stack,
+  Badge,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  Input,
+  Button,
+  Grid
+} from "@thetinycode/hash-ui"
+
+Example component:
+
+export default function Home() {
+  return (
+    <Section>
+      <Container>
+        <Stack gap="lg">
+
+          <Badge variant="success">
+            hash-ui works
+          </Badge>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Hello from #-UI</CardTitle>
+            </CardHeader>
+
+            <CardContent>
+              <Stack gap="md">
+                <Input placeholder="Type something..." />
+                <Button>Click me</Button>
+              </Stack>
+            </CardContent>
+          </Card>
+
+          <Grid cols={3}>
+            <Card className="p-4">One</Card>
+            <Card className="p-4">Two</Card>
+            <Card className="p-4">Three</Card>
+          </Grid>
+
+        </Stack>
+      </Container>
+    </Section>
+  )
+}
+Component Categories
+Layout (Primitives)
+
+Structural layout components.
+
+Box
+
+Container
+
+Stack
+
+Grid
+
+Section
+
+Divider
+
+Forms
+
+User input components.
+
+Button
+
+Input
+
+Textarea
+
+Select
+
+Checkbox
+
+Switch
+
+Label
+
+Display
+
+Data and content display components.
+
+Card
+
+Badge
+
+Avatar
+
+Alert
+
+Stat
+
+EmptyState
+
+Navigation
+
+Navigation related components.
+
+Header
+
+Tabs
+
+Breadcrumb
+
+Pagination
+
+Overlays
+
+Floating and modal UI elements.
+
+Modal
+
+Drawer
+
+Dropdown
+
+Tooltip
+
+Toast
+
+Marketing Components
+
+Landing page building blocks.
+
+Hero
+
+Requirements
+
+React 18 or newer
+
+Tailwind CSS v4
+
+Node 18+
+
+Development
+
+Clone the repository:
+
+git clone https://github.com/thetinycode/hash-ui
+cd hash-ui
+pnpm install
+
+Build the library:
+
+pnpm build
+
+The compiled package will be generated in:
+
+dist/
+Publishing
+
+Create a tarball preview:
+
+npm pack
+
+Publish to npm:
+
+pnpm publish --access public
+License
+
+MIT
+
+
+---
+
 README.md
 # #UI — hash-ui
 
