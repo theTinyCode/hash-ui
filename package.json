@@ -1,6 +1,6 @@
 {
   "name": "@thetinycode/hash-ui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "#-UI - reusable React UI primitives built with Tailwind CSS",
   "type": "module",
   "main": "./dist/index.cjs",

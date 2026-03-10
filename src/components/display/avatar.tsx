@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "../../lib/cn";
+import { cn } from "../../lib/cn.js";
 
 export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
   src?: string;
@@ -23,12 +23,23 @@ export function Avatar({
       {...props}
     >
       {src ? (
-        <img src={src} alt={alt ?? "Avatar"} className="h-full w-full object-cover" />
+        <img
+          src={src}
+          alt={alt ?? "Avatar"}
+          className="h-full w-full object-cover"
+        />
       ) : (
-        <span>{fallback ?? "UI"}</span>
+        <AvatarFallback>{fallback ?? "UI"}</AvatarFallback>
       )}
     </div>
   );
+}
+
+export function AvatarFallback({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLSpanElement>) {
+  return <span className={cn("uppercase", className)} {...props} />;
 }
 
 export function AvatarGroup({
