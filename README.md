@@ -119,20 +119,20 @@ export default function Demo() {
 
 ## Components
 
-| Category | Components |
-|----------|------------|
-| **Layout** | `Box` `Container` `Stack` `Grid` `Section` `Divider` |
-| **Forms** | `Button` `Input` `Textarea` `Select` `Checkbox` `Switch` `Label` |
-| **Display** | `Card` `Badge` `Avatar` `Alert` `Stat` `EmptyState` |
-| **Navigation** | `Header` `Tabs` `Breadcrumb` `Pagination` |
-| **Overlays** | `Modal` `Drawer` `Dropdown` `Tooltip` `Toast` |
-| **Marketing** | `Hero` |
+|     Category    |                         Components                               |
+|-----------------|------------------------------------------------------------------|
+| **Layout**      |     `Box` `Container` `Stack` `Grid` `Section` `Divider`         |
+| **Forms**       | `Button` `Input` `Textarea` `Select` `Checkbox` `Switch` `Label` |
+| **Display**     |       `Card` `Badge` `Avatar` `Alert` `Stat` `EmptyState`        |
+| **Navigation**  |   `Header` `Tabs` `Breadcrumb` `Pagination`                      |
+| **Overlays**    |   `Modal` `Drawer` `Dropdown` `Tooltip` `Toast`                  |
+| **Marketing**   |   `Hero`                                                         |
 
 ---
 
 ## Project Structure
 
-```
+```path
 hash-ui/
 ├── src/
 │   ├── components/
@@ -175,12 +175,12 @@ pnpm publish --access public
 
 ## Roadmap
 
-| Version | Status | Planned |
-|---------|--------|---------|
-| **v0.1** | ✅ Current | Core primitives, Forms, Display, Navigation, Overlays |
+|  Version |   Status   |                                    Planned                                    |
+|----------|------------|-------------------------------------------------------------------------------|
+| **v0.1** | ✅ Current |          Core primitives, Forms, Display, Navigation, Overlays                |
 | **v0.2** | 🔜 Planned | `IconButton`, `ButtonGroup`, `InputGroup`, `AvatarGroup`, Notification system |
-| **v0.3** | 🔜 Planned | `Navbar`, `Sidebar`, `Accordion`, Command palette, Theme support |
-| **v1.0** | 🎯 Future | Full docs, Demo site, Storybook, Accessibility, Animation utilities |
+| **v0.3** | 🔜 Planned |      `Navbar`, `Sidebar`, `Accordion`, Command palette, Theme support         |
+| **v1.0** | 🎯 Future  |      Full docs, Demo site, Storybook, Accessibility, Animation utilities      |
 
 ---
 
