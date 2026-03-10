@@ -186,4 +186,4 @@ pnpm publish --access public
 
 ## License
 
-MIT — Created by [Mawunya](https://github.com/thetinycode/hash-ui)
+MIT — Created by [Mawunya](https://github.com/Mawunya3)
